@@ -12,11 +12,17 @@ public class Enemy : MonoBehaviour
     // Spaceshipコンポーネント
     Spaceship spaceship;
 
+    // Managerコンポーネント
+    private Manager manager;
+
     IEnumerator Start()
     {
 
         // Spaceshipコンポーネントを取得
         spaceship = GetComponent<Spaceship>();
+
+        // Managerコンポーネントをシーン内から探して取得する
+        manager = FindObjectOfType<Manager>();
 
         // ローカル座標のY軸のマイナス方向に移動する
         Move(transform.up * -1);
@@ -41,7 +47,7 @@ public class Enemy : MonoBehaviour
             }
 
             // shotDelay秒待つ
-            yield return new WaitForSeconds(spaceship.shotDelay);
+            yield return new WaitForSeconds(spaceship.shotDelay / manager.gamerevel);
         }
     }
 
@@ -66,7 +72,7 @@ public class Enemy : MonoBehaviour
         Bullet bullet = playerBulletTransform.GetComponent<Bullet>();
 
         // ヒットポイントを減らす
-        hp = hp - bullet.power;
+        hp = hp - bullet.power - manager.gamerevel / 10;
 
         // 弾の削除
         Destroy(c.gameObject);

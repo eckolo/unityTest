@@ -8,6 +8,9 @@ public class Manager : MonoBehaviour
     // タイトル
     private GameObject title;
 
+    // レベル
+    public int gamerevel = 1;
+
     void Start()
     {
         // Titleゲームオブジェクトを検索し取得する
