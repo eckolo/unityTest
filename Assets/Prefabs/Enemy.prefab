@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 1.96, z: 0}
+  m_LocalPosition: {x: 2.15, y: 2.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436592}
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  shotDelay: 0.3
+  shotDelay: 0.7
   bullet: {fileID: 111874, guid: 030db386cba0cfa449eda1a7897c7624, type: 2}
   canShot: 1
   explosion: {fileID: 195220, guid: 2e9f88ec85d662e4baf3cbfc9582a4cf, type: 2}
