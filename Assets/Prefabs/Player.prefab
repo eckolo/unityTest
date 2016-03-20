@@ -11,7 +11,11 @@ GameObject:
   - 212: {fileID: 21282660}
   - 95: {fileID: 9562838}
   - 114: {fileID: 11404558}
-  m_Layer: 0
+  - 50: {fileID: 5011138}
+  - 114: {fileID: 11473336}
+  - 114: {fileID: 11401066}
+  - 61: {fileID: 6123818}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,11 +29,42 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.457, y: -0.676, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5011138
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164212}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &6123818
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164212}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.06, y: 0.06}
 --- !u!95 &9562838
 Animator:
   serializedVersion: 3
@@ -47,6 +82,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11401066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858c84ada0216041a608551f7a831f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  shotDelay: 0.05
+  bullet: {fileID: 107538, guid: a16e0e9661ceecf4ea34cfb85132d449, type: 2}
+  canShot: 1
+  explosion: {fileID: 195220, guid: 2e9f88ec85d662e4baf3cbfc9582a4cf, type: 2}
 --- !u!114 &11404558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58,8 +109,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf3a34866ecd5940925d2f441da7f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  bullet: {fileID: 107538, guid: a16e0e9661ceecf4ea34cfb85132d449, type: 2}
+--- !u!114 &11473336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf3a34866ecd5940925d2f441da7f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21282660
 SpriteRenderer:
   m_ObjectHideFlags: 1

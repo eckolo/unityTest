@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 435352}
   - 50: {fileID: 5023150}
   - 114: {fileID: 11487160}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 423284}
   - 212: {fileID: 21252062}
-  m_Layer: 0
+  - 60: {fileID: 6009916}
+  m_Layer: 10
   m_Name: BulletRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +43,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 491328}
   - 212: {fileID: 21255160}
-  m_Layer: 0
+  - 60: {fileID: 6071354}
+  m_Layer: 10
   m_Name: BulletLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,6 +106,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &6009916
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122880}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.03, y: 0.08}
+      - {x: -0.049999997, y: 0.049999997}
+      - {x: -0.049999997, y: -0.03}
+      - {x: -0.03, y: -0.08}
+      - {x: 0.03, y: -0.08}
+      - {x: 0.049999997, y: -0.02}
+      - {x: 0.049999997, y: 0.06}
+      - {x: 0.03, y: 0.08}
+--- !u!60 &6071354
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179484}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.03, y: 0.08}
+      - {x: -0.049999997, y: 0.049999997}
+      - {x: -0.049999997, y: -0.03}
+      - {x: -0.03, y: -0.08}
+      - {x: 0.03, y: -0.08}
+      - {x: 0.049999997, y: -0.02}
+      - {x: 0.049999997, y: 0.06}
+      - {x: 0.03, y: 0.08}
 --- !u!114 &11487160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  lifeTime: 1
 --- !u!212 &21252062
 SpriteRenderer:
   m_ObjectHideFlags: 1
