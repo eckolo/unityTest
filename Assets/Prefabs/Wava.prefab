@@ -563,6 +563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8833f9d3874954e915849c433f347d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 10
 --- !u!114 &11439976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -574,6 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8833f9d3874954e915849c433f347d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 10
 --- !u!114 &11444386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -633,6 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8833f9d3874954e915849c433f347d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 10
 --- !u!212 &21261196
 SpriteRenderer:
   m_ObjectHideFlags: 1
