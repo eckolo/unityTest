@@ -76,6 +76,12 @@ public class Enemy : MonoBehaviour
 
             // エネミーの削除
             Destroy(gameObject);
+
+        }
+        else {
+
+            spaceship.GetAnimator().SetTrigger("Damage");
+
         }
     }
 }
