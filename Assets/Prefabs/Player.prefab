@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 453692}
   - 212: {fileID: 21282660}
   - 95: {fileID: 9562838}
+  - 114: {fileID: 11404558}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -46,6 +47,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11404558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf3a34866ecd5940925d2f441da7f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  bullet: {fileID: 107538, guid: a16e0e9661ceecf4ea34cfb85132d449, type: 2}
 --- !u!212 &21282660
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -70,7 +84,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -579830075
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bf3bdd2147b394bc2b771f2556f0b49d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
